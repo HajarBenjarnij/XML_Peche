@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE peches SYSTEM "file:///C:/Users/Nazha_Hajar/Desktop/Tps_base_XML/Document2.dtd">
+<peches xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/Nazha_Hajar/Desktop/Tps_base_XML/shema_xsd.xsd">
+   <peche a="2020">
+     <pechemaritime>
+       <composition>
+         <total>127117</total>
+       </composition>
+       <exportation>
+         <produit a="Congelé">
+           <quantite>389146</quantite>
+           <valeur>10092704</valeur>
+         </produit>
+         <produit a="Conserves">
+           <quantite>187115</quantite>
+           <valeur>6290392</valeur>
+         </produit>
+         <produit a="farine de poisson">
+           <quantite>164268</quantite>
+           <valeur>1798380</valeur>
+         </produit>
+         <produit a="Huile de poisson">
+           <quantite>46050</quantite>
+           <valeur>827060</valeur>
+         </produit>
+         <produit a="Poisson frais">
+           <quantite>19486</quantite>
+           <valeur>1535151</valeur>
+         </produit>
+         <produit a="Semi Conserves">
+           <quantite>28299</quantite>
+           <valeur>1617136</valeur>
+         </produit>
+         <produit a="Autres">
+           <quantite>6458.1</quantite>
+           <valeur>456592</valeur>
+         </produit>
+         <total>
+           <totalquantite>840822</totalquantite>
+           <totalvaleur>22617415</totalvaleur>
+         </total>
+       </exportation>
+        
+     </pechemaritime>
+     <pechehautiere>
+       <composition>
+         <total>10367</total>
+         <marinsmarocains>7496</marinsmarocains>
+         <officiersmarocains>2686</officiersmarocains>
+         <officiersetrangers>149</officiersetrangers>
+         <techniciensetrangers>36</techniciensetrangers>
+       </composition>
+       <flotte>
+         <navire t="Céphalopodiers">
+           <charge>1175333</charge>
+           <nombre>346</nombre>
+         </navire>
+         <navire t="Crevettiers">
+           <charge>14095</charge>
+           <nombre>72</nombre>
+         </navire>
+         <navire t="Pélagiques">
+           <charge>26503</charge>
+           <nombre>39</nombre>
+         </navire>
+         <navire t="Réfrigérés">
+           <charge>1367</charge>
+           <nombre>9</nombre>
+         </navire>
+         <totalcharge>159503</totalcharge>
+         <totalnombre>466</totalnombre>
+       </flotte>
+     </pechehautiere>
+     <pechecotieretartisanale>
+       <composition>
+         <total>116750</total>
+         <marinsofficiersmarocains>61465</marinsofficiersmarocains>
+         <marinsofficiersetrangeres>14</marinsofficiersetrangeres>
+         <canotieresactifs>55271</canotieresactifs>
+       </composition>
+       <valeurquantite>
+         <Poissonpelagique>
+           <produit b="Sardine">
+             <valeur m="méditerannée">1355</valeur>
+             <valeur m="Atlantique">841953</valeur>
+           </produit>
+           <produit b="Maquereaux">
+             <valeur m="méditerannée">706</valeur>
+             <valeur m="Atlantique">185281</valeur>
+           </produit>
+           <produit b="Anchois">
+             <valeur m="méditerannée">643</valeur>
+             <valeur m="Atlantique">49435</valeur>
+           </produit>
+           <autres>
+             <valeur m="méditerannée">7221</valeur>
+             <valeur m="Atlantique">45814</valeur>
+           </autres>
+           <total m="méditerannée">9925</total>
+           <total m="Atlantique">1129273</total>
+         </Poissonpelagique>
+         <poissonblans>
+           <valeur m="méditerannée">3386</valeur>
+           <valeur m="Atlantique">72102</valeur>
+         </poissonblans>
+         <Cephalopodes>
+           <valeur m="méditerannée">4241</valeur>
+           <valeur m="Atlantique">49573</valeur>
+         </Cephalopodes>
+         <Crustacés>
+           <valeur m="méditerannée">5333</valeur>
+           <valeur m="Atlantique">3394</valeur>
+         </Crustacés>
+         <Coquillages>
+           <valeur m="méditerannée">1481</valeur>
+           <valeur m="Atlantique">177</valeur>
+         </Coquillages>
+         <quantitetotal m="méditerannée">19566</quantitetotal>
+         <quantitetotal m="Atlantique">1254518</quantitetotal>
+       </valeurquantite>
+       <regions>
+         <region a="Tanger-Tetouan-Houssima">
+           <poids>24003</poids>
+           <val>509458</val>
+         </region>
+         <region a="Oriental">
+           <poids>6089</poids>
+           <val>130766</val>
+         </region>
+         <region a="Rabat-Salé-Kénitra">
+           <poids>10516</poids>
+           <val>56839</val>
+         </region>
+         <region a="Casablanca-Settat">
+           <poids>31765</poids>
+           <val>226380</val>
+         </region>
+         <region a="Marrakech-Safi">
+           <poids>90641</poids>
+           <val>474677</val>
+         </region>
+         <region a="Souss-Massa">
+           <poids>39893</poids>
+           <val>343945</val>
+         </region>
+         <region a="Guelmim-oued Noun">
+           <poids>41053</poids>
+           <val>696286</val>
+         </region>
+         <region a="Laâyoune-Sakia El Hamra">
+           <poids>382383</poids>
+           <val>2106030</val>
+         </region>
+         <region a="Dakhla-Oued Ed-Dahab">
+           <poids>547742</poids>
+           <val>2091945</val>
+         </region>
+         <totalval>6636326</totalval>
+         <totalquant>1274085</totalquant>
+       </regions>
+       <flotte>
+         <bateaux>
+           <total>2528</total>
+           <Palangriers>880</Palangriers>
+           <Senneurs>622</Senneurs>
+           <Chalutiers>587</Chalutiers>
+           <Palangriers-Senneur>142</Palangriers-Senneur>
+           <Palangriers-Senneur>149</Palangriers-Senneur>
+           <Chalutiers-Palangriers>43</Chalutiers-Palangriers>
+           <autres>105</autres>
+         </bateaux>
+         <tonnage>
+           <total>145.044</total>
+           <Palangriers>22.277</Palangriers>
+           <SenneursSardiniers>52.337</SenneursSardiniers>
+           <Chalutiers>44.783</Chalutiers>
+           <Chalutiers-Senneur>8.303</Chalutiers-Senneur>
+           <Palangriers-Senneur>9.846</Palangriers-Senneur>
+           <Chalutiers-Palangriers>2.192</Chalutiers-Palangriers>
+           <autres>5.306</autres>
+         </tonnage>
+       </flotte>
+     </pechecotieretartisanale>
+   </peche>
+   <peche a="2019">
+     <pechemaritime>
+       <composition>
+         <total>118986</total>
+       </composition>
+       <exportation>
+         <produit a="Congelé">
+           <quantite>348678</quantite>
+           <valeur>9931728</valeur>
+         </produit>
+         <produit a="Conserves">
+           <quantite>185242</quantite>
+           <valeur>6288674</valeur>
+         </produit>
+         <produit a="farine de poisson">
+           <quantite>155678</quantite>
+           <valeur>1682028</valeur>
+         </produit>
+         <produit a="Huile de poisson">
+           <quantite>35796</quantite>
+           <valeur>618192</valeur>
+         </produit>
+         <produit a="Poisson frais">
+           <quantite>17331</quantite>
+           <valeur>1530263</valeur>
+         </produit>
+         <produit a="Semi Conserves">
+           <quantite>24679</quantite>
+           <valeur>1568901</valeur>
+         </produit>
+         <produit a="Autres">
+           <quantite>5589</quantite>
+           <valeur>246515</valeur>
+         </produit>
+         <total>
+           <totalquantite>772993</totalquantite>
+           <totalvaleur>22119301</totalvaleur>
+         </total>
+       </exportation>
+     </pechemaritime>
+     <pechehautiere>
+       <composition>
+         <total>8010</total>
+         <marinsmarocains>5247</marinsmarocains>
+         <officiersmarocains>2569</officiersmarocains>
+         <officiersetrangers>157</officiersetrangers>
+         <techniciensetrangers>37</techniciensetrangers>
+       </composition>
+       <flotte>
+         <navire t="Céphalopodiers">
+           <charge>118237</charge>
+           <nombre>349</nombre>
+         </navire>
+         <navire t="Crevettiers">
+           <charge>14095</charge>
+           <nombre>72</nombre>
+         </navire>
+         <navire t="Pélagiques">
+           <charge>22764</charge>
+           <nombre>33</nombre>
+         </navire>
+         <navire t="Réfrigérés">
+           <charge>1367</charge>
+           <nombre>9</nombre>
+         </navire>
+         <totalcharge>156463</totalcharge>
+         <totalnombre>463</totalnombre>
+       </flotte>
+     </pechehautiere>
+     <pechecotieretartisanale>
+       <composition>
+         <total>110976</total>
+         <marinsofficiersmarocains>54511</marinsofficiersmarocains>
+         <marinsofficiersetrangeres>15</marinsofficiersetrangeres>
+         <canotieresactifs>56450</canotieresactifs>
+       </composition>
+       <valeurquantite>
+         <Poissonpelagique>
+           <produit b="Sardine">
+             <valeur m="méditerannée">4853</valeur>
+             <valeur m="Atlantique">964296</valeur>
+           </produit>
+           <produit b="Maquereaux">
+             <valeur m="méditerannée">1118</valeur>
+             <valeur m="Atlantique">21816</valeur>
+           </produit>
+           <produit b="Anchois">
+             <valeur m="méditerannée">533</valeur>
+             <valeur m="Atlantique">19089</valeur>
+           </produit>
+           <autres>
+             <valeur m="méditerannée">8398</valeur>
+             <valeur m="Atlantique">45814</valeur>
+           </autres>
+           <total m="méditerannée">14902</total>
+           <total m="Atlantique">1240015</total>
+         </Poissonpelagique>
+         <poissonblans>
+           <valeur m="méditerannée">3173</valeur>
+           <valeur m="Atlantique">66190</valeur>
+         </poissonblans>
+         <Cephalopodes>
+           <valeur m="méditerannée">3864</valeur>
+           <valeur m="Atlantique">44483</valeur>
+         </Cephalopodes>
+         <Crustacés>
+           <valeur m="méditerannée">559</valeur>
+           <valeur m="Atlantique">3860</valeur>
+         </Crustacés>
+         <Coquillages>
+           <valeur m="méditerannée">997</valeur>
+           <valeur m="Atlantique">213</valeur>
+         </Coquillages>
+         <quantitetotal m="méditerannée">23495</quantitetotal>
+         <quantitetotal m="Atlantique">1354762</quantitetotal>
+       </valeurquantite>
+       <regions>
+         <region a="Tanger-Tetouan-Houssima">
+           <poids>28921</poids>
+           <val>615017</val>
+         </region>
+         <region a="Oriental">
+           <poids>6933</poids>
+           <val>136976</val>
+         </region>
+         <region a="Rabat-Salé-Kénitra">
+           <poids>12023</poids>
+           <val>70070</val>
+         </region>
+         <region a="Casablanca-Settat">
+           <poids>31880</poids>
+           <val>282328</val>
+         </region>
+         <region a="Marrakech-Safi">
+           <poids>62380</poids>
+           <val>440768</val>
+         </region>
+         <region a="Souss-Massa">
+           <poids>24910</poids>
+           <val>322585</val>
+         </region>
+         <region a="Guelmim-oued Noun">
+           <poids>159769</poids>
+           <val>842024</val>
+         </region>
+         <region a="Laâyoune-Sakia El Hamra">
+           <poids>446285</poids>
+           <val>2322044</val>
+         </region>
+         <region a="Dakhla-Oued Ed-Dahab">
+           <poids>605154</poids>
+           <val>2250378</val>
+         </region>
+         <totalval>7282190</totalval>
+         <totalquant>1378255</totalquant>
+       </regions>
+       <flotte>
+         <bateaux>
+           <total>2524</total>
+           <Palangriers>877</Palangriers>
+           <Senneurs>610</Senneurs>
+           <Chalutiers>581</Chalutiers>
+           <Chalutiers-Senneur>147</Chalutiers-Senneur>
+           <Palangriers-Senneur>152</Palangriers-Senneur>
+           <Chalutiers-Palangriers>49</Chalutiers-Palangriers>
+           <autres>108</autres>
+         </bateaux>
+         <tonnage>
+           <total>142092</total>
+           <Palangriers>21957</Palangriers>
+           <SenneursSardiniers>50077</SenneursSardiniers>
+           <Chalutiers>43765</Chalutiers>
+           <Chalutiers-Senneur>8513</Chalutiers-Senneur>
+           <Palangriers-Senneur>9879</Palangriers-Senneur>
+           <Chalutiers-Palangriers>2453</Chalutiers-Palangriers>
+           <autres>5430</autres>
+         </tonnage>
+       </flotte>
+     </pechecotieretartisanale>
+   </peche>
+   <peche a="2018">
+     <pechemaritime>
+       <composition>
+         <total>113377</total>
+       </composition>
+     </pechemaritime>
+     <pechehautiere>
+       <composition>
+         <total>8516</total>
+         <marinsmarocains>5681</marinsmarocains>
+         <officiersmarocains>2583</officiersmarocains>
+         <officiersetrangers>197</officiersetrangers>
+         <techniciensetrangers>55</techniciensetrangers>
+       </composition>
+     </pechehautiere>
+     <pechecotieretartisanale>
+       <composition>
+         <total>104861</total>
+         <marinsofficiersmarocains>53254</marinsofficiersmarocains>
+         <marinsofficiersetrangeres>21</marinsofficiersetrangeres>
+         <canotieresactifs>51586</canotieresactifs>
+       </composition>
+       <valeurquantite>
+         <Poissonpelagique>
+           <produit b="Sardine">
+             <valeur m="méditerannée">8232</valeur>
+             <valeur m="Atlantique">941311</valeur>
+           </produit>
+           <produit b="Maquereaux">
+             <valeur m="méditerannée">1890</valeur>
+             <valeur m="Atlantique">157442</valeur>
+           </produit>
+           <produit b="Anchois">
+             <valeur m="méditerannée">834</valeur>
+             <valeur m="Atlantique">22096</valeur>
+           </produit>
+           <autres>
+             <valeur m="méditerannée">7010</valeur>
+             <valeur m="Atlantique">50411</valeur>
+           </autres>
+           <total m="méditerannée">17966</total>
+           <total m="Atlantique">1171260</total>
+         </Poissonpelagique>
+         <poissonblans>
+           <valeur m="méditerannée">3578</valeur>
+           <valeur m="Atlantique">57309</valeur>
+         </poissonblans>
+         <Cephalopodes>
+           <valeur m="méditerannée">3189</valeur>
+           <valeur m="Atlantique">35166</valeur>
+         </Cephalopodes>
+         <Crustacés>
+           <valeur m="méditerannée">517</valeur>
+           <valeur m="Atlantique">3999</valeur>
+         </Crustacés>
+         <Coquillages>
+           <valeur m="méditerannée">616</valeur>
+           <valeur m="Atlantique">252</valeur>
+         </Coquillages>
+         <quantitetotal m="méditerannée">25866</quantitetotal>
+         <quantitetotal m="Atlantique">1270888</quantitetotal>
+       </valeurquantite>
+       <flotte>
+         <bateaux>
+           <total>2536</total>
+           <Palangriers>885</Palangriers>
+           <Senneurs>613</Senneurs>
+           <Chalutiers>574</Chalutiers>
+           <Chalutiers-Senneur>153</Chalutiers-Senneur>
+           <Palangriers-Senneur>153</Palangriers-Senneur>
+           <Chalutiers-Palangriers>53</Chalutiers-Palangriers>
+           <autres>105</autres>
+         </bateaux>
+         <tonnage>
+           <total>139954</total>
+           <Palangriers>21645</Palangriers>
+           <SenneursSardiniers>49402</SenneursSardiniers>
+           <Chalutiers>42587</Chalutiers>
+           <Chalutiers-Senneur>8791</Chalutiers-Senneur>
+           <Palangriers-Senneur>9669</Palangriers-Senneur>
+           <Chalutiers-Palangriers>2604</Chalutiers-Palangriers>
+           <autres>5256</autres>
+         </tonnage>
+       </flotte>
+     </pechecotieretartisanale>
+   </peche>
+</peches>
+

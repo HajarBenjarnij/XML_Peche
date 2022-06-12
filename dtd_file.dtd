@@ -1,0 +1,64 @@
+<!ELEMENT peches (peche+)>
+<!ELEMENT peche (pechemaritime, pechehautiere, pechecotieretartisanale)>
+<!ATTLIST peche
+          a CDATA #REQUIRED>
+<!ELEMENT pechemaritime (composition, exportation?)>
+<!ELEMENT composition (total?, marinsofficiersmarocains?, marinsofficiersetrangeres?, canotieresactifs?, marinsmarocains?, officiersmarocains?, officiersetrangers?, techniciensetrangers?)>
+<!ELEMENT exportation (produit+, total)>
+<!ELEMENT produit (quantite?, valeur+)>
+<!ATTLIST produit
+          a CDATA #IMPLIED
+          b CDATA #IMPLIED>
+<!ELEMENT quantite (#PCDATA)>
+<!ELEMENT valeur (#PCDATA)>
+<!ATTLIST valeur
+          m CDATA #IMPLIED>
+<!ELEMENT total (totalquantite?, totalvaleur?)>
+<!ATTLIST total
+          m CDATA #IMPLIED>
+<!ELEMENT totalquantite (#PCDATA)>
+<!ELEMENT totalvaleur (#PCDATA)>
+<!ELEMENT pechehautiere (composition, flotte?)>
+<!ELEMENT marinsmarocains (#PCDATA)>
+<!ELEMENT officiersmarocains (#PCDATA)>
+<!ELEMENT officiersetrangers (#PCDATA)>
+<!ELEMENT techniciensetrangers (#PCDATA)>
+<!ELEMENT flotte (bateaux?, tonnage?, navire*, totalcharge?, totalnombre?)>
+<!ELEMENT navire (charge, nombre)>
+<!ATTLIST navire
+          t CDATA #REQUIRED>
+<!ELEMENT charge (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT totalcharge (#PCDATA)>
+<!ELEMENT totalnombre (#PCDATA)>
+<!ELEMENT pechecotieretartisanale (composition, valeurquantite, regions?, flotte)>
+<!ELEMENT marinsofficiersmarocains (#PCDATA)>
+<!ELEMENT marinsofficiersetrangeres (#PCDATA)>
+<!ELEMENT canotieresactifs (#PCDATA)>
+<!ELEMENT valeurquantite (Poissonpelagique, poissonblans, Cephalopodes, Crustacés, Coquillages, quantitetotal+)>
+<!ELEMENT Poissonpelagique (produit+, autres, total+)>
+<!ELEMENT autres (valeur*)>
+<!ELEMENT poissonblans (valeur+)>
+<!ELEMENT Cephalopodes (valeur+)>
+<!ELEMENT Crustacés (valeur+)>
+<!ELEMENT Coquillages (valeur+)>
+<!ELEMENT quantitetotal (#PCDATA)>
+<!ATTLIST quantitetotal
+          m CDATA #REQUIRED>
+<!ELEMENT regions (region+, totalval, totalquant)>
+<!ELEMENT region (poids, val)>
+<!ATTLIST region
+          a CDATA #REQUIRED>
+<!ELEMENT poids (#PCDATA)>
+<!ELEMENT val (#PCDATA)>
+<!ELEMENT totalval (#PCDATA)>
+<!ELEMENT totalquant (#PCDATA)>
+<!ELEMENT bateaux (total, Palangriers, Senneurs, Chalutiers, Chalutiers-Senneur, Palangriers-Senneur+, Chalutiers-Palangriers, autres)>
+<!ELEMENT Palangriers (#PCDATA)>
+<!ELEMENT Senneurs (#PCDATA)>
+<!ELEMENT Chalutiers (#PCDATA)>
+<!ELEMENT Palangriers-Senneur (#PCDATA)>
+<!ELEMENT Chalutiers-Palangriers (#PCDATA)>
+<!ELEMENT tonnage (total, Palangriers, SenneursSardiniers, Chalutiers, Chalutiers-Senneur, Palangriers-Senneur, Chalutiers-Palangriers, autres)>
+<!ELEMENT SenneursSardiniers (#PCDATA)>
+<!ELEMENT Chalutiers-Senneur (#PCDATA)>

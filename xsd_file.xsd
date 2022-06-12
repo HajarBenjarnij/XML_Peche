@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="peches">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="peche" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="peche">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pechemaritime"/>
+        <xs:element ref="pechehautiere"/>
+        <xs:element ref="pechecotieretartisanale"/>
+      </xs:sequence>
+      <xs:attribute name="a" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pechemaritime">
+    <xs:complexType>
+      <xs:sequence minOccurs="0">
+        <xs:element ref="composition" minOccurs="0"/>
+        <xs:element ref="exportation" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="composition" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="exportation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="produit" maxOccurs="unbounded"/>
+        <xs:element ref="total"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="produit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="quantite" type="xs:string"/>
+        <xs:element ref="valeur" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="a" type="xs:string"/>
+      <xs:attribute name="b" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="valeur">
+    <xs:complexType mixed="true">
+      <xs:attribute name="m" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="total">
+    <xs:complexType mixed="true">
+      <xs:sequence minOccurs="0">
+        <xs:element name="totalquantite" type="xs:string"/>
+        <xs:element name="totalvaleur" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="m" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pechehautiere">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="composition"/>
+        <xs:element ref="flotte" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="composition">
+    <xs:complexType mixed="true">
+      <xs:sequence minOccurs="0">
+        <xs:element ref="total" minOccurs="0"/>
+        <xs:element name="marinsofficiersmarocains" type="xs:string"/>
+        <xs:element name="marinsofficiersetrangeres" type="xs:string"/>
+        <xs:element name="canotieresactifs" type="xs:string"/>
+        <xs:element name="marinsmarocains" type="xs:string"/>
+        <xs:element name="officiersmarocains" type="xs:string"/>
+        <xs:element name="officiersetrangers" type="xs:string"/>
+        <xs:element name="techniciensetrangers" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="flotte">
+    <xs:complexType>
+      <xs:sequence minOccurs="0">
+        <xs:element ref="bateaux" minOccurs="0"/>
+        <xs:element ref="tonnage" minOccurs="0"/>
+        <xs:element ref="navire" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="totalcharge" type="xs:string"/>
+        <xs:element name="totalnombre" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="navire">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="charge" type="xs:string"/>
+        <xs:element name="nombre" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="t" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pechecotieretartisanale">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="composition"/>
+        <xs:element ref="valeurquantite"/>
+        <xs:element ref="regions" minOccurs="0"/>
+        <xs:element ref="flotte"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="valeurquantite">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Poissonpelagique"/>
+        <xs:element ref="poissonblans"/>
+        <xs:element ref="Cephalopodes"/>
+        <xs:element ref="Crustacés"/>
+        <xs:element ref="Coquillages"/>
+        <xs:element ref="quantitetotal" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Poissonpelagique">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="produit" maxOccurs="unbounded"/>
+        <xs:element ref="autres"/>
+        <xs:element ref="total" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="autres">
+    <xs:complexType mixed="true">
+      <xs:sequence minOccurs="0">
+        <xs:element ref="valeur" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="poissonblans">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="valeur" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Cephalopodes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="valeur" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Crustacés">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="valeur" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Coquillages">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="valeur" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="quantitetotal">
+    <xs:complexType mixed="true">
+      <xs:attribute name="m" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="regions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="region" maxOccurs="unbounded"/>
+        <xs:element name="totalval" type="xs:string"/>
+        <xs:element name="totalquant" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="region">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="poids" type="xs:string"/>
+        <xs:element name="val" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="a" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bateaux">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="total"/>
+        <xs:element name="Palangriers" type="xs:string"/>
+        <xs:element name="Senneurs" type="xs:string"/>
+        <xs:element name="Chalutiers" type="xs:string"/>
+        <xs:element name="Chalutiers-Senneur" type="xs:string"/>
+        <xs:element name="Palangriers-Senneur" type="xs:string"/>
+        <xs:element name="Chalutiers-Palangriers" type="xs:string"/>
+        <xs:element ref="autres"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tonnage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="total"/>
+        <xs:element name="Palangriers" type="xs:string"/>
+        <xs:element name="SenneursSardiniers" type="xs:string"/>
+        <xs:element name="Chalutiers" type="xs:string"/>
+        <xs:element name="Chalutiers-Senneur" type="xs:string"/>
+        <xs:element name="Palangriers-Senneur" type="xs:string"/>
+        <xs:element name="Chalutiers-Palangriers" type="xs:string"/>
+        <xs:element ref="autres"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
