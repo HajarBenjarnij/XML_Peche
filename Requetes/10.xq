@@ -1,0 +1,1 @@
+for $x in collection("peche")//exportation/produit return replace node $x/valeur with <newvaleur>{$x/valeur*1000}</newvaleur>
